@@ -18,4 +18,8 @@ async function postAPI() {
       "Content-type": "application/json; charset=UTF-8",
     },
   });
+
+  console.log(api, "api");
+  const json = await api.json();
+  console.log(json, "json");
 }
